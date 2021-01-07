@@ -18,9 +18,10 @@ import Datatable from './Datatable.svelte';
 	width: 60vw;
 	height: 100vh;
 	margin: 0 auto;
+	color: rgb(201, 179, 179);
 }
 .content{
-	border: 1px solid rgba(85, 84, 84, 0.39);
+	border: 1px solid rgba(124, 111, 111, 0.39);
 	padding: 1em;
 	border-radius: 1em;
 }
