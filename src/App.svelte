@@ -19,10 +19,6 @@ import Datatable from './Datatable.svelte';
 	height: 100vh;
 	margin: 0 auto;
 }
-.header{
-	margin: 0 auto;
-	align-items: center;
-}
 .content{
 	border: 1px solid rgba(85, 84, 84, 0.39);
 	padding: 1em;
@@ -30,8 +26,5 @@ import Datatable from './Datatable.svelte';
 }
 h1{
 	text-align: center;
-}
-body{
-	color: black;
 }
 </style>
