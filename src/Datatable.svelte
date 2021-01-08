@@ -23,14 +23,14 @@ const settings = {
 <div id="tbl">
     <Datatable settings={settings} data={data}>
     <thead>
-        <th data-key="zemlja">ZEMLJA</th>
+        <th data-key="zemlja" >ZEMLJA</th>
         <th data-key="ulazak">STATUS</th>
     </thead>
     <tbody>
     {#each $rows as row}
         <tr>
-            <td class="zemlja">{row.zemlja}</td>
-            <td class="ulazak-icons">{row.ulazak}</td>
+            <td class="zemlja" style="width: 2em">{row.zemlja}</td>
+            <td class="ulazak-icons" >{row.ulazak}</td>
         </tr>
     {/each}
     </tbody>

@@ -35,7 +35,7 @@ span{
     box-shadow: 0 8px 6px -6px black;
 }
 }
-@media (max-width: 575.98px){
+@media (max-width:900.98px){
 h1{
     text-align: center;
     color: rgb(112, 106, 106);

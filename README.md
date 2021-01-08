@@ -30,9 +30,9 @@ Otvori **localhost:5000** u brauzeru.
 6. Da pokreneš spider i smestiš fajl u svelte static folder uradi ovu komandu 
 
 ```
-scrapy crawl zemlje -t json -o ../../src/static/data/zemlje.json
+rm -rf ../../src/static/data/zemlje.json && scrapy crawl zemlje -t json -o ../../src/static/data/zemlje.json
 ```
-7. Ako ti treba icsv fajl pokreni ovu komandu
+7. Ako ti treba i csv fajl pokreni ovu komandu
 ```
 scrapy crawl zemlje -t csv -o ../../src/static/data/zemlje.csv
 ```
