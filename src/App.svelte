@@ -1,12 +1,13 @@
 <script>
 import Datatable from './Datatable.svelte';
+import Header from './Header.svelte';
+import Buttons from './Buttons.svelte';
 </script>
 
 <main>
 	<div class="container">
-		<header>
-			<h1><span>OTVORENE GRANICE</span> | u doba korone</h1>
-		</header>
+		<Buttons />
+		<Header />
 		<div class="content">
 			<Datatable />
 		</div>
@@ -14,18 +15,19 @@ import Datatable from './Datatable.svelte';
 </main>
 
 <style>
-.container{
-	width: 60vw;
-	height: 100vh;
-	margin: 0 auto;
-	color: rgb(201, 179, 179);
+@media (max-width: 5199.98px){
+	.container{
+		width: 70vw;
+		height: 100%;
+		margin: 0 auto;
+	}
 }
-.content{
-	border: 1px solid rgba(124, 111, 111, 0.39);
-	padding: 1em;
-	border-radius: 1em;
-}
-h1{
-	text-align: center;
+@media (max-width: 575.98px){
+	.container{
+		width: 90vw;
+		padding: 1em;
+		height: 100%;
+		margin: 0 auto;
+	}
 }
 </style>

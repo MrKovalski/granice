@@ -1,5 +1,5 @@
 <script>
-    import data from './static/data/zemlje.json'
+import data from './static/data/zemlje.json'
 
 import { Datatable, rows } from 'svelte-simple-datatables'
 
@@ -20,34 +20,38 @@ const settings = {
 }
 </script>
 
-
-<table>
+<div id="tbl">
+    <Datatable settings={settings} data={data}>
     <thead>
-        <th>DRŽAVA</th>
-        <th>ULAZAK</th>
+        <th data-key="zemlja">ZEMLJA</th>
+        <th data-key="ulazak">STATUS</th>
     </thead>
     <tbody>
-        {#each data as d}
+    {#each $rows as row}
         <tr>
-            <td>{d.zemlja}</td>
-            <td class="ulazak-icons">{d.ulazak}</td>
+            <td class="zemlja">{row.zemlja}</td>
+            <td class="ulazak-icons">{row.ulazak}</td>
         </tr>
     {/each}
     </tbody>
-</table>
+</Datatable>    
+</div>
 
 <style>
-table{
+#tbl{
     margin: 0 auto;
+    height: 85vh;
 }
-th{
-    width:50%;
-    }
 td{
     text-align:center;
     padding:4px 0;
-    }
+}
 .ulazak-icons{
     font-size: 2em;
+}
+@media (max-width: 575.98px){
+.ulazak-icons{
+    font-size: 1.5em;
+}
 }
 </style>
