@@ -40,8 +40,12 @@ const settings = {
 <style>
 #tbl{
     margin: 0 auto;
+    padding:10px 0 10px 0;
+    border-radius: 16px;
     height: 85vh;
+    border: 1px solid rgba(80, 78, 78, 0.178);
 }
+
 td{
     text-align:center;
     padding:4px 0;
@@ -54,4 +58,5 @@ td{
     font-size: 1.5em;
 }
 }
+
 </style>
